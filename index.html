@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" http-equiv="X-UA-Compatible" content="ie=edge" 
+    name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <title>Weather Dashboard</title>
+</head>
+<body>
+
+<div id="heading">
+<h1>Weather Dashboard</h1>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4" id="sidebar"> 
+            <h2><strong>Search for a City:</strong></h2> 
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="searchField" placeholder="City,State without spaces" aria-label="City Search" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" id="searchButton" type="button">Search</button>
+            </div>
+            </div>
+        
+        <ul class="list-group">
+            <li class="list-group-item" class="city" id="Austin">Austin</li>
+            <li class="list-group-item" class="city" id="Chicago">Chicago</li>
+            <li class="list-group-item" class="city" id="newYork">New York</li>
+            <li class="list-group-item" class="city" id="Orlando">Orlando</li>
+            <li class="list-group-item" class="city" id="sanFrancisco">San Francisco</li>
+            <li class="list-group-item" class="city" id="Seattle">Seattle</li>
+            <li class="list-group-item" class="city" id="Denver">Denver</li>
+            <li class="list-group-item" class="city" id="Atlanta">Atlanta</li>
+        </ul>
+        </div>
+        
+        <div class="col-8" id="main-display"> 
+            <div id="weatherDetails">
+                <p id="cityName"</p>
+                <p id="temperature"</p>
+                <p id="humidity"</p>
+                <p id="windSpeed"</p>
+                <p id="uvIndex"</p>
+            </div>
+            
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Tomorrow</h5>
+                <p class="card-text" id="day1Temp"></p>
+                <p class="card-text" id="day1Humidity"></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Day 2</h5>
+                <p class="card-text" id="day2Temp"></p>
+                <p class="card-text" id="day2Humidity"></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Day 3</h5>
+                <p class="card-text" id="day3Temp"></p>
+                <p class="card-text" id="day3Humidity"></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Day 4</h5>
+                <p class="card-text" id="day4Temp"></p>
+                <p class="card-text" id="day4Humidity"></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Day 5</h5>
+                <p class="card-text" id="day5Temp"></p>
+                <p class="card-text" id="day5Humidity"></p>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<script src="script.js">
+</script>
+</body>
+</html>

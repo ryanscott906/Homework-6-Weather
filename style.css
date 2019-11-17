@@ -1,0 +1,30 @@
+#heading {
+text-align: center;
+background-color: black;
+color: white;
+padding: 10px;
+}
+#sidebar {
+    text-align: left;
+    background-color: lightgrey;
+}
+#searchButton {
+    background-color: blue;
+    color: white;
+}
+li:hover {
+    background-color: red;
+}
+#forecast {
+    display: inline-block;
+}
+.card {
+    background-color: blue;
+    display: inline-block;
+}
+.card-title {
+    color: white;
+}
+.card-text {
+    color: white;
+}
